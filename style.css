@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding: 0px;
+  box-sizing: border-box;
 }
 
-/* Body-style */
+/* body-style */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #333;
@@ -13,14 +14,14 @@ body {
   overflow: hidden;
 }
 
-/* P:style */
+/* p:style */
 p {
   margin: 10px;
   font-family: Space Mono;
   font-size: 13px;
 }
 
-/* Parent-box */
+/* parent-box */
 .container {
   width: 100%;
   height: 100%;
@@ -29,7 +30,7 @@ p {
   scroll-snap-type: y mandatory;
 }
 
-/* Navigation-styles */
+/* navigation-styles */
 .navbar {
   position: fixed;
   top: 0;
@@ -39,22 +40,38 @@ p {
   height: 60px;
   background: rgba(0, 0, 0, 0.7);
 }
+/* styles on li in nav-bar */
+li {
+  display: flex;
+}
 
-/* Navigation-ul-no-style */
+/* styles on logo */
+li .logo {
+  display: flex;
+  margin: none;
+  padding: none;
+  width: 100px;
+  height: 100px;
+}
+
+/* navigation-ul-no-style */
 .navbar ul {
   display: flex;
   list-style: none;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-/* Styles on list */
+.navbar ul li img {
+  padding: 0px;
+}
+/* styles on list */
 .navbar ul li {
   margin: 0 1rem;
   padding: 1rem;
 }
 
-/* Styles on links */
+/* styles on links */
 .navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -63,13 +80,13 @@ p {
   font-family: Space Mono;
 }
 
-/* Styles on links when hovering */
+/* styles on links when hovering */
 .navbar ul li a:hover {
   color: rgb(43, 43, 43);
   font-size: 1.2rem;
 }
 
-/* Overall style on sections */
+/* overall style on sections */
 section {
   display: flex;
   flex-direction: column;
@@ -79,4 +96,86 @@ section {
   width: 100%;
   height: 100vh;
   scroll-snap-align: center;
+}
+
+/* styles on section-one */
+section#one {
+  background: url(images/1.jpg) no-repeat center center/cover;
+}
+
+.parentOne {
+  height: 100%;
+  width: 100%;
+  justify-content: left;
+  align-items: center;
+  display: flex;
+}
+
+.boxOne {
+  width: 500px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-left: 10%;
+  margin-top: 5%;
+  padding: 50px;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+
+section#one button {
+  margin-top: 20%;
+  width: 100px;
+  height: 40px;
+  border: none;
+}
+
+/* styles on second section */
+section#two {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+}
+
+/* styles on divs in section#two */
+.parentTwo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleTwo {
+  justify-content: flex-start;
+  margin-top: 100px;
+  width: 500px;
+  height: 500px;
+  text-align: left;
+}
+
+.boxTwo {
+  width: 700px;
+  margin-top: 18%;
+  padding: 100px;
+  text-align: left;
+}
+
+/* styles on section three */
+section#three {
+  display: flex;
+}
+
+/* styles on divs in section three */
+
+section#four {
+}
+section#five {
+}
+
+section#six {
+}
+
+section#seven {
+}
+
+section#eight {
 }
