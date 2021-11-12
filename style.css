@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+/* Body-style */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* P:style */
+p {
+  margin: 10px;
+  font-family: Space Mono;
+  font-size: 13px;
+}
+
+/* Parent-box */
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+/* Navigation-styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation-ul-no-style */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Styles on list */
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+/* Styles on links */
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  transition-duration: 500ms;
+  font-family: Space Mono;
+}
+
+/* Styles on links when hovering */
+.navbar ul li a:hover {
+  color: rgb(43, 43, 43);
+  font-size: 1.2rem;
+}
+
+/* Overall style on sections */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
