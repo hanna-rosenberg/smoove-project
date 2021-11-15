@@ -21,6 +21,9 @@ p {
   font-size: 13px;
 }
 
+h1 {
+  font-family: Space Mono;
+}
 /* parent-box */
 .container {
   width: 100%;
@@ -100,7 +103,7 @@ section {
 
 /* styles on section-one */
 section#one {
-  background: url(images/1.jpg) no-repeat center center/cover;
+  background: url(images/3.jpg) no-repeat center center/cover;
 }
 
 .parentOne {
@@ -115,8 +118,8 @@ section#one {
   width: 500px;
   height: 400px;
   background: rgba(0, 0, 0, 0.7);
-  margin-left: 10%;
-  margin-top: 5%;
+  margin: 10%;
+  margin-top: 15%;
   padding: 50px;
   border-color: white;
   border-style: solid;
@@ -152,7 +155,6 @@ section#two {
 
 .boxTwo {
   width: 700px;
-  padding: 100px;
   text-align: left;
   align-items: center;
   display: flex;
@@ -161,11 +163,80 @@ section#two {
 /* styles on section three */
 section#three {
   display: flex;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* styles on divs in section three */
+.parentThree {
+  display: column;
+  justify-content: flex-start;
+}
+.boxThree {
+  background: url(images/3.jpg) no-repeat center center/cover;
+  height: 50vh;
+  width: 100vw;
+  align-self: flex-start;
+}
+
+section#three h1 {
+  margin: 40px;
+  font-family: Space Mono;
+}
+
+section#three p {
+  margin: 40px;
+}
+
+.buttonThree {
+  width: 400px;
+  height: 40px;
+}
+
+/* styles on section four */
+.buttonFour {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+}
 
 section#four {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.parentFour {
+  display: column;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.boxFour {
+  background: url(images/3.jpg) no-repeat center center/cover;
+  height: 50vh;
+  width: 100vw;
+  align-self: flex-start;
+}
+
+.lowerParent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.smallerBox {
+  width: 35vw;
+  height: 35vh;
+  background: rgba(0, 0, 0, 0.7);
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  margin: 5%;
+  padding: 10px;
+}
+
+.smallerBox h1 {
+  font-family: Space Mono;
+  margin: 10px;
+  font-size: 30px;
 }
 section#five {
 }
