@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
@@ -17,20 +17,27 @@ body {
 /* p:style */
 p {
   font-family: Aileron;
-  font-size: 13px;
+  font-size: 20px;
 }
 
 h1 {
   font-family: Montserrat;
+  font-size: 47.12px;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 29.12px;
 }
 
 button {
-  margin-top: 20%;
+  /* margin-top: 20%; */
   width: 100px;
   height: 40px;
   border: none;
   font-family: Aileron;
 }
+
 /* parent-box */
 .container {
   width: 100%;
@@ -42,12 +49,10 @@ button {
 
 /* navigation-styles */
 .navbar {
-  position: fixed;
   top: 0;
   z-index: 1;
-  display: flex;
   width: 100%;
-  height: 60px;
+  height: 90px;
   background: rgba(0, 0, 0, 0.7);
 }
 
@@ -59,23 +64,25 @@ li {
 /* styles on logo */
 li .logo {
   display: flex;
-  margin: auto;
   padding: none;
   width: 100px;
   height: 100px;
+  align-items: center;
 }
 
 /* navigation-ul-no-style */
 .navbar ul {
   display: flex;
-  list-style: none;
-  width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar ul li img {
   padding: 0px;
+  height: 60px;
+  margin-top: 8%;
 }
+
 /* styles on list */
 .navbar ul li {
   margin: 0 1rem;
@@ -115,7 +122,7 @@ section#one {
 }
 
 section#one p {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .parentOne {
   height: 100%;
@@ -132,9 +139,12 @@ section#one p {
   margin: 10%;
   margin-top: 15%;
   padding: 50px;
-  border-color: white;
   border-style: solid;
   border-width: 1px;
+}
+
+section#one button {
+  margin-top: 30px;
 }
 
 /* styles on SECOND SECTION */
@@ -176,15 +186,20 @@ section#three {
   display: column;
   justify-content: flex-start;
 }
+
 .boxThree {
   background: url(images/3.jpg) no-repeat center center/cover;
-  height: 70vh;
+  height: 67vh;
   width: 100vw;
   align-self: flex-start;
 }
 
-section#three h1 {
-  margin: 20px;
+.boxThreeLower {
+  background: rgba(0, 0, 0, 0.7);
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section#three p {
@@ -196,13 +211,13 @@ section#three p {
   height: 40px;
 }
 
-input {
-  width: 400px;
+section#three input {
+  width: 500px;
   height: 40px;
   border: none;
 }
 
-input[type="submit"] {
+section#three input[type="submit"] {
   font-family: Aileron;
   width: 100px;
 }
@@ -267,6 +282,7 @@ section#four {
   margin-top: 10px;
 }
 
+/* Styles on fifth section */
 section#five {
   background: rgba(0, 0, 0, 0.7);
 }
@@ -295,7 +311,13 @@ section#five p {
   border-width: 1px;
 }
 
+section#five button {
+  margin-top: 20px;
+}
+/* 
+Styles on sixth section */
 section#six {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .parentContainer {
@@ -337,6 +359,67 @@ section#six {
   margin: 10px;
 }
 
+/* Styles on seventh section  */
+section#seven {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+}
+
+/* styles on divs in section#two */
+.parentSeven {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleSeven {
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.smallParentSeven {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.formSeven {
+  height: 50vh;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+section#seven input {
+  height: 50px;
+  width: 400px;
+}
+
+section#three input[type="submit"] {
+  font-family: Aileron;
+  width: 100px;
+}
+
+section#seven form {
+  margin: 10px;
+}
+section#seven form {
+  height: 50px;
+}
+
+.textDiv {
+  height: 200px;
+  width: 200px;
+}
+/* Styles on eight section */
 section#eight {
   background: url(images/3.jpg) no-repeat center center/cover;
 }
@@ -358,7 +441,8 @@ footer {
 .footerParent {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 20px;
+  align-items: center;
 }
 
 .footerOne {
