@@ -35,14 +35,16 @@ button {
   /* margin-top: 20%; */
   width: 100px;
   height: 40px;
-  border: none;
   font-family: Aileron;
+  background: none;
+  border-color: white;
+  color: white;
 }
 
 /* parent-box */
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow-y: scroll;
   /* overflow-x: hidden; */
   scroll-behavior: smooth;
@@ -55,21 +57,22 @@ button {
   z-index: 1;
   width: 100%;
   height: 90px;
-  background: rgba(0, 0, 0, 0.7);
+  justify-content: right;
+  display: flex;
+  margin-top: 100px;
 }
 
+.logotype {
+  align-self: left;
+  justify-self: flex-start;
+}
+.logotype img {
+  height: 70px;
+  width: 70px;
+}
 /* styles on li in nav-bar */
 li {
   display: flex;
-}
-
-/* styles on logo */
-li .logo {
-  display: flex;
-  padding: none;
-  width: 100px;
-  height: 100px;
-  align-items: center;
 }
 
 /* navigation-ul-no-style */
@@ -77,24 +80,18 @@ li .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.navbar ul li img {
-  padding: 0px;
-  height: 60px;
-  margin-top: 8%;
+  margin-right: 70px;
 }
 
 /* styles on list */
 .navbar ul li {
   margin: 0 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 /* styles on links */
 .navbar ul li a {
   text-decoration: none;
-  text-transform: uppercase;
   color: #f4f4f4;
   transition-duration: 500ms;
   font-family: Aileron;
@@ -102,7 +99,7 @@ li .logo {
 
 /* styles on links when hovering */
 .navbar ul li a:hover {
-  color: rgb(43, 43, 43);
+  color: #df8c40;
   font-size: 1.2rem;
 }
 
@@ -135,6 +132,10 @@ section#one video {
 section#one p {
   margin-top: 10px;
 }
+
+section#one h1 {
+  color: #df8c40;
+}
 .parentOne {
   height: 100%;
   width: 100%;
@@ -146,17 +147,15 @@ section#one p {
 .boxOne {
   width: 500px;
   height: 400px;
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
   margin: 10%;
-  margin-top: 15%;
+  margin-top: 25%;
   padding: 50px;
-  border-style: solid;
-  border-width: 1px;
   z-index: 1;
 }
 
 section#one button {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 /* styles on SECOND SECTION */
@@ -190,19 +189,19 @@ section#two {
 /* styles on SECTION THREE */
 section#three {
   display: flex;
-  justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 .parentThree {
   display: column;
   justify-content: flex-start;
+  height: 100%;
+  width: 100%;
 }
 
 .boxThree {
   background: url(images/3.jpg) no-repeat center center/cover;
   height: 67vh;
-  width: 100vw;
   align-self: flex-start;
 }
 
@@ -212,6 +211,7 @@ section#three {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 section#three p {
@@ -224,7 +224,7 @@ section#three p {
 }
 
 section#three input {
-  width: 500px;
+  width: 550px;
   height: 40px;
   border: none;
 }
@@ -252,7 +252,7 @@ section#three input[type="submit"] {
 section#four {
   display: flex;
   justify-content: flex-start;
-  background: url(images/3.jpg) no-repeat center center/cover;
+  background: url(images/5.png) no-repeat center center/cover;
 }
 
 .parentFour {
@@ -263,7 +263,7 @@ section#four {
   width: 100vw;
   align-items: flex-end;
 }
-
+/* 
 .lowerParent {
   display: flex;
   justify-content: center;
@@ -292,7 +292,7 @@ section#four {
   font-size: 30px;
   align-self: center;
   margin-top: 10px;
-}
+} */
 
 /* Styles on fifth section */
 section#five {
@@ -444,7 +444,8 @@ section#eight {
 }
 
 footer {
-  background: rgba(0, 0, 0, 0.7);
+  background: black;
+  opacity: 90%;
   height: 20vh;
   width: 100vw;
   align-items: center;
