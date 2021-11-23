@@ -175,8 +175,9 @@ section#one button {
 
 /* styles on SECOND SECTION */
 section#two {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-image: linear-gradient(315deg, #000000 0%, #363838 74%);
   display: flex;
+  color: #df8c40;
 }
 
 /* styles on divs in section#two */
@@ -184,25 +185,37 @@ section#two {
   height: 100%;
   /* width: 100%; */
   display: flex;
-}
-
-.titleTwo {
-  width: 50%;
-  height: 100vh;
-  text-align: left;
-  padding: 100px;
+  justify-content: space-between;
+  position: relative;
 }
 
 section#two h1 {
-  font-weight: 100;
+  margin-bottom: 10px;
 }
+
+section#two p {
+  margin-top: 40px;
+}
+
 .boxTwo {
-  width: 700px;
+  width: 590px;
   text-align: left;
   align-items: center;
-  display: flex;
-  padding: 100px;
+  padding: 94px;
   flex-direction: column;
+  margin-left: 830px;
+  position: relative;
+  z-index: 1;
+}
+
+.planet {
+  position: absolute;
+  height: 80vh;
+  z-index: 1;
+  height: 100px;
+}
+.boxTwo img {
+  position: absolute;
 }
 
 /* styles on SECTION THREE */
