@@ -59,8 +59,8 @@ button {
   height: 90px;
   justify-content: space-between;
   display: flex;
-  margin-top: 100px;
-  padding: 30px;
+  margin-top: 20px;
+  padding: 40px;
 }
 
 .logotype {
@@ -68,8 +68,8 @@ button {
   justify-self: flex-start;
 }
 .logotype img {
-  height: 90px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
 }
 /* styles on li in nav-bar */
 li {
@@ -148,8 +148,8 @@ section#one h1 {
   width: 420px;
   height: 400px;
   /* background: rgba(0, 0, 0, 0.7); */
-  margin: 10%;
-  margin-top: 25%;
+  margin: 7%;
+  margin-top: 15%;
   padding: 50px;
   z-index: 1;
   position: relative;
@@ -158,6 +158,14 @@ section#one h1 {
 section#one .boxOne img {
   position: absolute;
 }
+
+.navbar .logotype {
+  margin-top: -45px;
+}
+.navbar li img {
+  margin-top: 4px;
+}
+
 section#one button {
   margin-top: 40px;
 }
