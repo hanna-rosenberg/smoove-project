@@ -24,6 +24,7 @@ p {
 h1 {
   font-family: Montserrat;
   font-size: 47.12px;
+  font-weight: medium;
 }
 
 h2 {
@@ -59,7 +60,7 @@ button {
   height: 90px;
   justify-content: space-between;
   display: flex;
-  margin-top: 20px;
+  margin-top: 4%;
   padding: 40px;
 }
 
@@ -160,7 +161,9 @@ section#one .boxOne img {
 }
 
 .navbar .logotype {
-  margin-top: -45px;
+  width: 100 px;
+  height: 100 px;
+  margin-top: -3.5%;
 }
 .navbar li img {
   margin-top: 4px;
@@ -190,12 +193,16 @@ section#two {
   padding: 100px;
 }
 
+section#two h1 {
+  font-weight: 100;
+}
 .boxTwo {
   width: 700px;
   text-align: left;
   align-items: center;
   display: flex;
   padding: 100px;
+  flex-direction: column;
 }
 
 /* styles on SECTION THREE */
