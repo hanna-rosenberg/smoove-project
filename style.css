@@ -195,6 +195,17 @@ section#two h1 {
 
 section#two p {
   margin-top: 40px;
+  font-size: 18px;
+}
+
+.titleTwo {
+  width: 590px;
+  text-align: left;
+  align-items: center;
+  padding: 94px;
+  flex-direction: column;
+  margin-left: 58.8%;
+  z-index: 1;
 }
 
 .boxTwo {
@@ -203,8 +214,7 @@ section#two p {
   align-items: center;
   padding: 94px;
   flex-direction: column;
-  margin-left: 830px;
-  position: relative;
+  margin-left: 58.8%;
   z-index: 1;
 }
 
@@ -212,12 +222,33 @@ section#two p {
   position: absolute;
   height: 80vh;
   z-index: 1;
-  height: 100px;
 }
 .boxTwo img {
   position: absolute;
 }
 
+.biglines {
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+
+.firstInTimeline {
+  position: absolute;
+  top: 28%;
+  left: 7.5%;
+  color: white;
+  z-index: 1;
+}
+
+.firstStep {
+  position: absolute;
+  top: 45%;
+  left: 5.5%;
+  color: white;
+  z-index: 1;
+  width: 100px;
+}
 /* styles on SECTION THREE */
 section#three {
   display: flex;
