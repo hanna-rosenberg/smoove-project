@@ -183,7 +183,7 @@ section#two {
 /* styles on divs in section#two */
 .parentTwo {
   height: 100%;
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   position: relative;
