@@ -43,7 +43,7 @@ button {
 
 /* parent-box */
 .container {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   overflow-y: scroll;
   /* overflow-x: hidden; */
@@ -57,9 +57,10 @@ button {
   z-index: 1;
   width: 100%;
   height: 90px;
-  justify-content: right;
+  justify-content: space-between;
   display: flex;
   margin-top: 100px;
+  padding: 30px;
 }
 
 .logotype {
@@ -67,8 +68,8 @@ button {
   justify-self: flex-start;
 }
 .logotype img {
-  height: 70px;
-  width: 70px;
+  height: 90px;
+  width: 90px;
 }
 /* styles on li in nav-bar */
 li {
@@ -78,9 +79,8 @@ li {
 /* navigation-ul-no-style */
 .navbar ul {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-right: 70px;
+  justify-content: right;
 }
 
 /* styles on list */
@@ -145,15 +145,19 @@ section#one h1 {
 }
 
 .boxOne {
-  width: 500px;
+  width: 420px;
   height: 400px;
   /* background: rgba(0, 0, 0, 0.7); */
   margin: 10%;
   margin-top: 25%;
   padding: 50px;
   z-index: 1;
+  position: relative;
 }
 
+section#one .boxOne img {
+  position: absolute;
+}
 section#one button {
   margin-top: 40px;
 }
