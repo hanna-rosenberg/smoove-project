@@ -18,13 +18,14 @@ body {
 /* p:style */
 p {
   font-family: Aileron;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h1 {
   font-family: Montserrat;
   font-size: 47.12px;
   font-weight: medium;
+  color: #df8c40;
 }
 
 h2 {
@@ -60,7 +61,7 @@ button {
   height: 90px;
   justify-content: space-between;
   display: flex;
-  margin-top: 4%;
+  margin-top: 10%;
   padding: 40px;
 }
 
@@ -132,6 +133,7 @@ section#one video {
 
 section#one p {
   margin-top: 10px;
+  font-size: 20px;
 }
 
 section#one h1 {
@@ -150,7 +152,7 @@ section#one h1 {
   height: 400px;
   /* background: rgba(0, 0, 0, 0.7); */
   margin: 7%;
-  margin-top: 15%;
+  margin-top: 25%;
   padding: 50px;
   z-index: 1;
   position: relative;
@@ -326,7 +328,8 @@ section#two p {
 /* styles on SECTION THREE */
 section#three {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: flex-start;
+  background: url(images/5.png) no-repeat center center/cover;
 }
 
 .parentThree {
@@ -334,42 +337,113 @@ section#three {
   justify-content: flex-start;
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
-.boxThree {
+.upRight {
+  position: absolute;
+  top: 40%;
+  left: 67%;
+  color: white;
+}
+
+.upRightText {
+  position: absolute;
+  top: 37%;
+  left: 70%;
+  color: white;
+  width: 170px;
+}
+
+.downRight {
+  position: absolute;
+  top: 68%;
+  left: 62%;
+  color: white;
+}
+
+.downRightText {
+  position: absolute;
+  top: 65.5%;
+  left: 82%;
+  color: white;
+  width: 190px;
+  text-align: left;
+}
+
+.downLeft {
+  position: absolute;
+  top: 31%;
+  left: 19%;
+  color: white;
+}
+
+.upLeftText {
+  position: absolute;
+  top: 32.5%;
+  left: 21%;
+  color: white;
+  width: 190px;
+  text-align: left;
+}
+
+.upLeft {
+  position: absolute;
+  top: 31%;
+  left: 19%;
+  color: white;
+}
+
+.downLeft {
+  position: absolute;
+  top: 62%;
+  left: 10%;
+  color: white;
+}
+
+.downLeftText {
+  position: absolute;
+  top: 63.5%;
+  left: 13.5%;
+  color: white;
+  width: 190px;
+  text-align: left;
+  width: 150px;
+}
+/* .boxThree {
   background: url(images/3.jpg) no-repeat center center/cover;
   height: 67vh;
   align-self: flex-start;
-}
+} */
 
-.boxThreeLower {
+/* .boxThreeLower {
   background: rgba(0, 0, 0, 0.7);
   height: 33vh;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-}
+} */
 
-section#three p {
+/* section#three p {
   margin: 40px;
-}
+} */
 
-.buttonThree {
+/* .buttonThree {
   width: 400px;
   height: 40px;
-}
+} */
 
-section#three input {
+/* section#three input {
   width: 550px;
   height: 40px;
   border: none;
-}
-
+} */
+/* 
 section#three input[type="submit"] {
   font-family: Aileron;
   width: 100px;
-}
+} */
 
 /* styles on SECTION FOUR  */
 .smallerBox button {
@@ -389,16 +463,38 @@ section#three input[type="submit"] {
 section#four {
   display: flex;
   justify-content: flex-start;
-  background: url(images/5.png) no-repeat center center/cover;
+  background: url(images/Long\ range\ version\ BILD.jpeg) no-repeat center
+    center/cover;
 }
 
 .parentFour {
   display: column;
-  display: flex;
   justify-content: center;
   height: 100vh;
-  align-items: flex-end;
+  align-items: center;
 }
+
+.childFour {
+  margin-top: 40%;
+}
+.parentFour input[type="text"] {
+  font-family: Aileron;
+  width: 600px;
+  height: 50px;
+  text-align: center;
+  background: transparent;
+  border-color: white;
+  color: white;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 40px;
+  font-family: Aileron;
+  background: none;
+  margin-top: 5%;
+}
+
 /* 
 .lowerParent {
   display: flex;
