@@ -209,15 +209,18 @@ section#two p {
 }
 
 .boxTwo {
-  width: 590px;
+  width: 550px;
   text-align: left;
   align-items: center;
-  padding: 94px;
+  padding: 70px;
   flex-direction: column;
-  margin-left: 58.8%;
+  margin-left: 62%;
   z-index: 1;
 }
 
+/* .boxTwo p {
+  margin-left: 40px;
+} */
 .planet {
   position: absolute;
   height: 80vh;
@@ -225,6 +228,7 @@ section#two p {
 }
 .boxTwo img {
   position: absolute;
+  width: 33%;
 }
 
 .biglines {
@@ -248,6 +252,76 @@ section#two p {
   color: white;
   z-index: 1;
   width: 100px;
+}
+
+.secondInTimeline {
+  position: absolute;
+  top: 56%;
+  color: white;
+  z-index: 1;
+  left: 24.8%;
+}
+
+.secondStep {
+  position: absolute;
+  top: 29.5%;
+  left: 22.5%;
+  color: white;
+  z-index: 1;
+  width: 100px;
+}
+
+.thirdInTimeline {
+  position: absolute;
+  top: 28%;
+  left: 39.2%;
+  color: white;
+  z-index: 1;
+}
+
+.thirdStep {
+  position: absolute;
+  top: 45%;
+  left: 36%;
+  color: white;
+  z-index: 1;
+  width: 120px;
+}
+
+.fourthInTimeline {
+  position: absolute;
+  top: 64.5%;
+  left: 49.5%;
+  color: white;
+  z-index: 1;
+  width: 60px;
+}
+
+.forthStep {
+  position: absolute;
+  top: 68.5%;
+  left: 47.2%;
+  color: white;
+  z-index: 1;
+  width: 120px;
+}
+
+.fifthInTimeline {
+  position: absolute;
+  top: 45.7%;
+  left: 57.9%;
+  color: white;
+  z-index: 1;
+  width: 60px;
+}
+
+.fifthStep {
+  position: absolute;
+  top: 38.3%;
+  left: 55.7%;
+  color: white;
+  z-index: 1;
+  width: 120px;
 }
 /* styles on SECTION THREE */
 section#three {
@@ -323,7 +397,6 @@ section#four {
   display: flex;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
   align-items: flex-end;
 }
 /* 
@@ -398,14 +471,12 @@ section#six {
 .parentContainer {
   display: flex;
   flex-direction: column;
-  width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 .containerTop {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,14 +484,12 @@ section#six {
 }
 
 .containerMiddle {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .containerBottom {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -457,7 +526,6 @@ section#seven {
 
 .smallParentSeven {
   height: 80vh;
-  width: 100vw;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -502,7 +570,6 @@ section#eight {
 .parentEight {
   display: flex;
   height: 100vh;
-  width: 100vw;
   align-items: flex-end;
 }
 
@@ -510,7 +577,6 @@ footer {
   background: black;
   opacity: 90%;
   height: 20vh;
-  width: 100vw;
   align-items: center;
 }
 
