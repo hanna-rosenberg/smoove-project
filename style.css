@@ -242,18 +242,21 @@ section#two p {
 .firstInTimeline {
   position: absolute;
   top: 28%;
-  left: 7.5%;
+
   color: white;
   z-index: 1;
+  left: 126px;
+  transform: translateX(-50%);
 }
 
 .firstStep {
   position: absolute;
   top: 45%;
-  left: 5.5%;
   color: white;
   z-index: 1;
   width: 100px;
+  left: 126px;
+  transform: translateX(-50%);
 }
 
 .secondInTimeline {
@@ -261,22 +264,25 @@ section#two p {
   top: 56%;
   color: white;
   z-index: 1;
-  left: 24.8%;
+  left: 374px;
+  transform: translateX(-50%);
 }
 
 .secondStep {
   position: absolute;
   top: 29.5%;
-  left: 22.5%;
   color: white;
   z-index: 1;
   width: 100px;
+  left: 374px;
+  transform: translateX(-50%);
 }
 
 .thirdInTimeline {
   position: absolute;
   top: 28%;
-  left: 39.2%;
+  left: 577px;
+  transform: translateX(-50%);
   color: white;
   z-index: 1;
 }
@@ -284,7 +290,8 @@ section#two p {
 .thirdStep {
   position: absolute;
   top: 45%;
-  left: 36%;
+  left: 577px;
+  transform: translateX(-50%);
   color: white;
   z-index: 1;
   width: 120px;
@@ -293,7 +300,8 @@ section#two p {
 .fourthInTimeline {
   position: absolute;
   top: 64.5%;
-  left: 49.5%;
+  left: 734px;
+  transform: translateX(-50%);
   color: white;
   z-index: 1;
   width: 60px;
@@ -302,7 +310,8 @@ section#two p {
 .forthStep {
   position: absolute;
   top: 68.5%;
-  left: 47.2%;
+  left: 734px;
+  transform: translateX(-50%);
   color: white;
   z-index: 1;
   width: 120px;
@@ -311,7 +320,8 @@ section#two p {
 .fifthInTimeline {
   position: absolute;
   top: 45.7%;
-  left: 57.9%;
+  left: 854px;
+  transform: translateX(-50%);
   color: white;
   z-index: 1;
   width: 60px;
@@ -320,7 +330,8 @@ section#two p {
 .fifthStep {
   position: absolute;
   top: 38.3%;
-  left: 55.7%;
+  left: 854px;
+  transform: translateX(-50%);
   color: white;
   z-index: 1;
   width: 120px;
@@ -463,8 +474,7 @@ section#three input[type="submit"] {
 section#four {
   display: flex;
   justify-content: flex-start;
-  background: url(images/Long\ range\ version\ BILD.jpeg) no-repeat center
-    center/cover;
+  background: url(images/test.jpg) no-repeat center center/cover;
 }
 
 .parentFour {
@@ -527,7 +537,7 @@ input[type="submit"] {
 } */
 
 /* Styles on fifth section */
-section#five {
+/* section#five {
   background: rgba(0, 0, 0, 0.7);
 }
 
@@ -557,10 +567,10 @@ section#five p {
 
 section#five button {
   margin-top: 20px;
-}
+} */
 /* 
 Styles on sixth section */
-section#six {
+/* section#six {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -597,16 +607,16 @@ section#six {
   width: 200px;
   height: 200px;
   margin: 10px;
-}
+} */
 
 /* Styles on seventh section  */
-section#seven {
+/* section#seven {
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
-}
+} */
 
 /* styles on divs in section#two */
-.parentSeven {
+/* .parentSeven {
   height: 100%;
   width: 100%;
   display: flex;
@@ -657,7 +667,7 @@ section#seven form {
 .textDiv {
   height: 200px;
   width: 200px;
-}
+} */
 /* Styles on eight section */
 section#eight {
   background: url(images/3.jpg) no-repeat center center/cover;
