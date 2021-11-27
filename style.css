@@ -37,22 +37,67 @@ h2 {
 }
 
 button {
-  /* margin-top: 20%; */
-  width: 120px;
+  border: hidden;
+}
+.knapp {
+  position: relative;
+  display: block;
+  background: transparent;
+  width: 300px;
+  height: 80px; /* denna och line-height måste va samma */
+  line-height: 80px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin: 40px auto;
+  box-sizing: border-box;
   font-family: Aileron;
-  background: white;
-  border-color: white;
-  color: #251c12;
-  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
-  height: 40px;
-  cursor: pointer;
-  transition-duration: 0.3s;
+  font-size: 14px;
 }
 
-button:hover {
-  background-color: #df8c40;
-  border-color: #df8c40;
-  color: white;
+/* detta måste var med annars blir allt kaos men vet inte riktigt varför hahaha */
+.knapp:before,
+.knapp:after {
+  position: absolute;
+  content: "";
+  width: 300px;
+  left: 0px;
+  height: 36px;
+  z-index: -1;
+}
+
+/* det som gör att knappen faktiskt blir hexagonig */
+.knapp:before {
+  transform: perspective(15px) rotateX(3deg);
+}
+.knapp:after {
+  top: 40px;
+  transform: perspective(15px) rotateX(-3deg);
+}
+
+/* Borderstyling innan hover */
+
+.knapp.border:before,
+.knapp.border:after {
+  border: 2px solid white;
+}
+
+/* detta tar bort strecket som blir i mitten */
+.knapp.border:before {
+  border-bottom: none;
+}
+.knapp.border:after {
+  border-top: none;
+}
+
+/* Här är koden för alla hover-effekter */
+
+.knapp.border:hover:before,
+.knapp.border:hover:after {
+  background: white;
+}
+.knapp.border:hover {
+  color: black;
 }
 
 /* parent-box */
@@ -145,6 +190,7 @@ section#one video {
 
 section#one p {
   margin-top: 10px;
+  color: #df8c40;
 }
 
 section#one h1 {
@@ -356,7 +402,8 @@ section#two p {
 section#three {
   display: flex;
   justify-content: flex-start;
-  background: url(images/5.png) no-repeat center center/cover;
+  background: url(images/2D_teknisk_overlay_slutlig.png) no-repeat center
+    center/cover;
 }
 
 .parentThree {
@@ -436,7 +483,7 @@ section#three {
 
 .comboUpRight {
   top: 37%;
-  left: 64%;
+  left: 67%;
   width: 250px;
   height: 115px;
   position: absolute;
@@ -540,6 +587,7 @@ section#four {
   border-color: white;
   color: black;
   clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+  border: hidden;
 }
 
 input[type="submit"] {
@@ -553,6 +601,7 @@ input[type="submit"] {
   color: black;
   clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
   transition-duration: 0.5s;
+  border: hidden;
 }
 
 input[type="submit"]:hover {
@@ -560,6 +609,7 @@ input[type="submit"]:hover {
   border-color: #df8c40;
   cursor: pointer;
   color: white;
+  border: hidden;
 }
 
 /* section#five .carousel {
@@ -743,7 +793,7 @@ section#seven form {
 /* Styles on eight section */
 
 section#eight {
-  background: url(images/footerimg.png) no-repeat center center/cover;
+  background: url(images/footer.png) no-repeat center center/cover;
   justify-content: flex-end;
 }
 
