@@ -31,15 +31,27 @@ h1 {
 h2 {
   font-family: Montserrat;
   font-size: 29.12px;
+  color: #df8c40;
+  font-weight: lighter;
+  margin-bottom: 10%;
 }
 
 button {
   /* margin-top: 20%; */
-  width: 100px;
-  height: 40px;
+  width: 120px;
   font-family: Aileron;
-  background: none;
+  background: white;
   border-color: white;
+  color: #251c12;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  height: 40px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: #df8c40;
+  border-color: #df8c40;
   color: white;
 }
 
@@ -133,7 +145,6 @@ section#one video {
 
 section#one p {
   margin-top: 10px;
-  font-size: 20px;
 }
 
 section#one h1 {
@@ -172,7 +183,12 @@ section#one .boxOne img {
 }
 
 section#one button {
-  margin-top: 40px;
+  margin-top: 48px;
+}
+
+section#one button p {
+  margin-top: 0px;
+  font-size: 14px;
 }
 
 /* styles on SECOND SECTION */
@@ -353,46 +369,42 @@ section#three {
 
 .upRight {
   position: absolute;
-  top: 40%;
-  left: 67%;
+  right: 0;
+  bottom: 0;
   color: white;
 }
 
 .upRightText {
   position: absolute;
-  top: 37%;
-  left: 70%;
+  right: 30px;
+
   color: white;
   width: 170px;
 }
 
 .downRight {
   position: absolute;
-  top: 68%;
-  left: 62%;
+  /* top: 68%;
+  left: 62%; */
   color: white;
+  bottom: 0;
+  right: 0;
 }
 
 .downRightText {
   position: absolute;
-  top: 65.5%;
-  left: 82%;
+  /* top: 65.5%;
+  left: 82%; */
   color: white;
   width: 190px;
   text-align: left;
-}
-
-.downLeft {
-  position: absolute;
-  top: 31%;
-  left: 19%;
-  color: white;
+  right: 8px;
 }
 
 .upLeftText {
   position: absolute;
-  top: 32.5%;
-  left: 21%;
+  top: 12px;
+  left: 0%;
   color: white;
   width: 190px;
   text-align: left;
@@ -400,26 +412,58 @@ section#three {
 
 .upLeft {
   position: absolute;
-  top: 31%;
-  left: 19%;
+  top: 0%;
+  left: 0%;
   color: white;
 }
 
 .downLeft {
   position: absolute;
-  top: 62%;
-  left: 10%;
+  top: 0;
+  left: 0%;
   color: white;
 }
 
 .downLeftText {
   position: absolute;
-  top: 63.5%;
-  left: 13.5%;
+  top: 12px;
+  left: 0;
   color: white;
   width: 190px;
   text-align: left;
   width: 150px;
+}
+
+.comboUpRight {
+  top: 37%;
+  left: 64%;
+  width: 250px;
+  height: 115px;
+  position: absolute;
+}
+
+.comboDownRight {
+  top: 65%;
+  right: 5%;
+  width: 500px;
+  height: 145px;
+  position: absolute;
+}
+
+.comboUpLeft {
+  top: 30%;
+  left: 20%;
+  width: 500px;
+  height: 145px;
+  position: absolute;
+}
+
+.comboDownLeft {
+  top: 62%;
+  left: 10%;
+  width: 500px;
+  height: 145px;
+  position: absolute;
 }
 /* .boxThree {
   background: url(images/3.jpg) no-repeat center center/cover;
@@ -473,7 +517,7 @@ section#three input[type="submit"] {
 
 section#four {
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   background: url(images/test.jpg) no-repeat center center/cover;
 }
 
@@ -489,20 +533,47 @@ section#four {
 }
 .parentFour input[type="text"] {
   font-family: Aileron;
-  width: 600px;
+  width: 400px;
   height: 50px;
   text-align: center;
-  background: transparent;
+  background: white;
   border-color: white;
-  color: white;
+  color: black;
+  clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
 }
 
 input[type="submit"] {
   width: 100px;
   height: 40px;
   font-family: Aileron;
-  background: none;
+  background: white;
+  border-color: white;
   margin-top: 5%;
+  visibility: hidden;
+  color: black;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+}
+
+input[type="submit"]:hover {
+  background: white;
+  border-color: white;
+
+  color: black;
+}
+
+/* section#five .carousel {
+  width: 100%;
+  height: 100%;
+} */
+
+.carousel {
+  height: 100vh;
+  width: 100vw;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
 }
 
 /* 
