@@ -32,7 +32,7 @@ h2 {
   font-family: Montserrat;
   font-size: 29.12px;
   color: #df8c40;
-  font-weight: lighter;
+  font-style: Regular;
   margin-bottom: 10%;
 }
 
@@ -552,13 +552,14 @@ input[type="submit"] {
   visibility: hidden;
   color: black;
   clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  transition-duration: 0.5s;
 }
 
 input[type="submit"]:hover {
-  background: white;
-  border-color: white;
-
-  color: black;
+  background: #df8c40;
+  border-color: #df8c40;
+  cursor: pointer;
+  color: white;
 }
 
 /* section#five .carousel {
@@ -740,43 +741,44 @@ section#seven form {
   width: 200px;
 } */
 /* Styles on eight section */
-section#eight {
-  background: url(images/3.jpg) no-repeat center center/cover;
-}
 
-.parentEight {
-  display: flex;
-  height: 100vh;
-  align-items: flex-end;
+section#eight {
+  background: url(images/footerimg.png) no-repeat center center/cover;
+  justify-content: flex-end;
 }
 
 footer {
-  background: black;
   opacity: 90%;
-  height: 20vh;
+  height: 12vh;
+  width: 1420px;
   align-items: center;
+  display: flex-end;
+  min-width: 500px;
 }
 
 .footerParent {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
   align-items: center;
+  height: 12vh;
 }
 
 .footerOne {
   display: flex;
-  margin-left: 200px;
+  margin-left: 50px;
 }
 
+.footerTwo {
+  width: 200px;
+  height: 50px;
+}
 .footerTwo img {
-  display: flex;
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
+  width: 200px;
+  height: 50px;
 }
 
 .footerThree {
   display: flex;
-  margin-right: 200px;
+  margin-right: 50px;
+  margin-top: 10px;
 }
