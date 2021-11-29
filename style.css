@@ -793,24 +793,29 @@ section#seven form {
 /* Styles on eight section */
 
 section#eight {
-  background: url(images/footer.png) no-repeat center center/cover;
   justify-content: flex-end;
+  position: relative;
 }
 
-footer {
+/* footer {
   opacity: 90%;
   height: 12vh;
   width: 1420px;
   align-items: center;
   display: flex-end;
   min-width: 500px;
-}
+} */
 
 .footerParent {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 12vh;
+  z-index: 99;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  left: 0;
 }
 
 .footerOne {
@@ -831,4 +836,10 @@ footer {
   display: flex;
   margin-right: 50px;
   margin-top: 10px;
+}
+
+section#eight video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

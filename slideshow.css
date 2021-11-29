@@ -20,8 +20,9 @@
   justify-content: left;
 }
 
-.txt .knapp {
-  margin: 40% 0% 0% 0%;
+.txt .knapp,
+.txtRation .knapp {
+  margin: 40% 3% 0% 3%;
 }
 .hex {
   position: absolute;
