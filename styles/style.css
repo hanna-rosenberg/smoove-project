@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/* body-style */
 body {
   font-family: Aileron;
   background: #333;
@@ -15,7 +14,6 @@ body {
   width: auto !important;
 }
 
-/* p:style */
 p {
   font-family: Aileron;
   font-size: 18px;
@@ -66,5 +64,15 @@ section {
 @media screen and (max-width: 425px) {
   .container {
     width: 425px;
+    /* overflow-x: hidden; */
+  }
+  h1 {
+    font-family: Montserrat;
+    font-size: 29.1px;
+    font-weight: medium;
+    color: #df8c40;
+  }
+  section {
+    scroll-snap-align: none;
   }
 }

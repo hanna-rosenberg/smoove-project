@@ -8,13 +8,12 @@
   position: relative;
   display: block;
   background: transparent;
-  width: 300px;
-  height: 80px;
-  line-height: 80px;
+  width: 170px;
+  height: 24px;
+  line-height: 44px;
   text-align: center;
   text-decoration: none;
   color: white;
-  margin: 40px auto;
   box-sizing: border-box;
   font-family: Aileron;
   font-size: 14px;
@@ -24,18 +23,20 @@
 .hexagonButton:after {
   position: absolute;
   content: "";
-  width: 300px;
+  width: 170px;
   left: 0px;
-  height: 36px;
+  height: 20px;
   z-index: -1;
 }
 
 .hexagonButton:before {
-  transform: perspective(15px) rotateX(3deg);
+  transform: perspective(15px) rotateX(5deg);
+  height: 22px;
 }
 .hexagonButton:after {
-  top: 40px;
-  transform: perspective(15px) rotateX(-3deg);
+  top: 25px;
+  transform: perspective(15px) rotateX(-5deg);
+  height: 22px;
 }
 
 .hexagonButton.border:before,

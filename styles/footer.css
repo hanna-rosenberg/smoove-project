@@ -46,10 +46,11 @@
 
   .footerTwo {
     height: 30px;
+    display: flex;
+    align-items: center;
   }
   .footerTwo img {
-    /* width: 200vw; */
-    height: 20px;
+    height: 25px;
   }
 
   .footerThree p {

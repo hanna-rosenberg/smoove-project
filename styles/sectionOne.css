@@ -31,12 +31,13 @@ section#frontPage h1 {
 
 .frontBox {
   width: 420px;
-  height: 400px;
+  height: 300px;
   margin: 7%;
   margin-top: 25%;
   padding: 50px;
   z-index: 1;
   position: relative;
+  margin-bottom: 15%;
 }
 
 section#frontPage .frontBox img {
@@ -57,5 +58,31 @@ section#frontPage button p {
 @media screen and (max-width: 425px) {
   section#frontPage video {
     right: -20px;
+  }
+
+  section#frontPage video {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 85px;
+    left: 0;
+    object-fit: cover;
+    object-position: 87% 50%;
+    border-bottom: #df8c40 2px solid;
+  }
+
+  section#frontPage .frontBox img {
+    display: none;
+  }
+
+  .frontBox {
+    width: 420px;
+    /* height: 300px; */
+    margin: 7%;
+    /* margin-top: 80%; */
+    top: 30%;
+    padding: 50px;
+    z-index: 1;
+    position: relative;
   }
 }

@@ -149,3 +149,63 @@ section#timeline p {
   z-index: 1;
   width: 120px;
 }
+
+/* media-queries for section-Two */
+
+@media screen and (max-width: 425px) {
+  section#timeline {
+    height: 1400px;
+  }
+
+  .timelineContainer {
+    height: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .timelineBox {
+    margin-top: 700px;
+    width: 550px;
+    text-align: left;
+    align-items: center;
+    padding: 70px;
+    flex-direction: column;
+    z-index: 1;
+  }
+  .timelineBox img {
+    width: 355px;
+  }
+
+  section#timeline p {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  .blueTimeline {
+    display: none;
+  }
+
+  .firstYearInTimeline,
+  .firstEvent,
+  .secondYearInTimeline,
+  .secondEvent,
+  .thirdYearInTimeline,
+  .thirdEvent,
+  .fourthYearInTimeline,
+  .forthEvent,
+  .fifthYearInTimeline,
+  .fifthEvent {
+    display: none;
+  }
+
+  .timelineBox {
+    width: 550px;
+    text-align: left;
+    align-items: center;
+    padding: 70px;
+    flex-direction: column;
+    margin-left: 0%;
+    z-index: 1;
+  }
+}
