@@ -1,0 +1,61 @@
+/* styles on FIRST section, frontPage */
+
+section#frontPage {
+  position: relative;
+}
+
+section#frontPage video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+section#frontPage p {
+  margin-top: 10px;
+  color: #df8c40;
+}
+
+section#frontPage h1 {
+  color: #df8c40;
+}
+.frontPageContainer {
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  align-items: center;
+  display: flex;
+}
+
+.frontBox {
+  width: 420px;
+  height: 400px;
+  margin: 7%;
+  margin-top: 25%;
+  padding: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+section#frontPage .frontBox img {
+  position: absolute;
+}
+
+section#frontPage button {
+  margin-top: 48px;
+}
+
+section#frontPage button p {
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+/* media-queries for section-One */
+
+@media screen and (max-width: 425px) {
+  section#frontPage video {
+    right: -20px;
+  }
+}

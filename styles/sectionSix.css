@@ -1,0 +1,10 @@
+section#eight {
+  justify-content: flex-end;
+  position: relative;
+}
+
+section#eight video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

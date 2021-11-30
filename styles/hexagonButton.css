@@ -1,0 +1,59 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.hexagonButton {
+  position: relative;
+  display: block;
+  background: transparent;
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin: 40px auto;
+  box-sizing: border-box;
+  font-family: Aileron;
+  font-size: 14px;
+}
+
+.hexagonButton:before,
+.hexagonButton:after {
+  position: absolute;
+  content: "";
+  width: 300px;
+  left: 0px;
+  height: 36px;
+  z-index: -1;
+}
+
+.hexagonButton:before {
+  transform: perspective(15px) rotateX(3deg);
+}
+.hexagonButton:after {
+  top: 40px;
+  transform: perspective(15px) rotateX(-3deg);
+}
+
+.hexagonButton.border:before,
+.hexagonButton.border:after {
+  border: 2px solid white;
+}
+
+.hexagonButton.border:before {
+  border-bottom: none;
+}
+.hexagonButton.border:after {
+  border-top: none;
+}
+
+.hexagonButton.border:hover:before,
+.hexagonButton.border:hover:after {
+  background: white;
+}
+.hexagonButton.border:hover {
+  color: black;
+}

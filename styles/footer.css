@@ -1,0 +1,31 @@
+.footerParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  z-index: 99;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  left: 0;
+}
+
+.footerOne {
+  display: flex;
+  margin-left: 50px;
+}
+
+.footerTwo {
+  width: 200px;
+  height: 50px;
+}
+.footerTwo img {
+  width: 200px;
+  height: 50px;
+}
+
+.footerThree {
+  display: flex;
+  margin-right: 50px;
+  margin-top: 10px;
+}
