@@ -8,3 +8,9 @@ section#eight video {
   height: 100%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 425px) {
+  section#eight video {
+    height: 75%;
+  }
+}

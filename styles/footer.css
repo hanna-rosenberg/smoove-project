@@ -29,3 +29,38 @@
   margin-right: 50px;
   margin-top: 10px;
 }
+@media screen and (max-width: 425px) {
+  .footerParent {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+  footer img {
+    width: 100vw;
+    height: 30px;
+  }
+
+  .footerTwo {
+    height: 30px;
+  }
+  .footerTwo img {
+    /* width: 200vw; */
+    height: 20px;
+  }
+
+  .footerThree p {
+    font-size: 16px;
+  }
+
+  .footerOne {
+    margin-left: 0;
+  }
+
+  .footerThree {
+    margin: 0;
+  }
+}
