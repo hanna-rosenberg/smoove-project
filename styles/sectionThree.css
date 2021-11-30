@@ -3,8 +3,18 @@
 section#overlay {
   display: flex;
   justify-content: flex-start;
-  background: url(../images/Overlay.png) no-repeat center center/cover;
+  background: url(../images/overlay-komprimerad.webp) no-repeat center
+    center/cover;
 }
+
+.infomobile {
+  display: none;
+}
+
+/*.infomobile ul {
+		  list-style-image: url("../images/listdot.svg");
+		
+	} */
 
 .overlayContainer {
   display: column;
@@ -106,4 +116,38 @@ section#overlay {
   width: 190px;
   text-align: left;
   width: 150px;
+}
+
+@media screen and (max-width: 425px) {
+  .overlayContainer {
+    display: none;
+  }
+
+  section#overlay {
+    background: url("../images/overlaymobkomp.webp") no-repeat center
+      center/cover;
+    background-position: top;
+    height: 775px;
+  }
+  .infomobile {
+    display: block;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 16px 16px 16px 32px;
+    color: #4fc4e9;
+    text-align: center;
+    border-bottom: #df8c40 2px solid;
+  }
+  .infomobile ul {
+    display: inline-block;
+    text-align: left;
+    list-style-image: url("../images/listdot.svg");
+    list-style-position: outside;
+  }
+  .infomobile ul li {
+    display: list-item;
+    margin: 16px 0;
+  }
+  .infomobile h2 {
+    margin-bottom: 16px;
+  }
 }

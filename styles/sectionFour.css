@@ -16,9 +16,13 @@
 section#four {
   display: flex;
   /* justify-content: flex-start; */
-  background: url(../images/test.jpg) no-repeat center center/cover;
+  background: url(../images/interior-komprimerad.webp) no-repeat center
+    center/cover;
 }
 
+section#four h1 {
+  color: #4fc4e9;
+}
 .parentFour {
   display: column;
   justify-content: center;
@@ -27,7 +31,8 @@ section#four {
 }
 
 .childFour {
-  margin-top: 40%;
+  margin-top: 70vh;
+  width: 100%;
 }
 .parentFour input[type="text"] {
   font-family: Aileron;

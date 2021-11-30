@@ -29,7 +29,8 @@ section#timeline p {
   align-items: center;
   padding: 70px;
   flex-direction: column;
-  margin-left: 62%;
+  margin-left: 60%;
+
   z-index: 1;
 }
 
@@ -41,6 +42,12 @@ section#timeline p {
   height: 80vh;
   z-index: 1;
 }
+.marsdesktop {
+  display: block;
+}
+.marsmobile {
+  display: none;
+}
 .timelineBox img {
   position: absolute;
   width: 33%;
@@ -50,6 +57,9 @@ section#timeline p {
   position: absolute;
   top: 40%;
   left: 0;
+}
+.timelineMobile {
+  display: none;
 }
 
 .firstYearInTimeline {
@@ -170,12 +180,26 @@ section#timeline p {
     width: 550px;
     text-align: left;
     align-items: center;
-    padding: 70px;
+    padding: 24px;
     flex-direction: column;
     z-index: 1;
   }
   .timelineBox img {
     width: 355px;
+  }
+  .timelineMobile {
+    display: none;
+    z-index: 1000;
+    top: 0;
+    height: 500px;
+  }
+
+  .timelineMobile img {
+    top: 0;
+    height: 500px;
+    margin-left: 212.5px;
+    margin-top: 165px;
+    position: relative;
   }
 
   section#timeline p {
@@ -199,13 +223,33 @@ section#timeline p {
     display: none;
   }
 
+  .timelineMobile {
+    display: flex;
+  }
+
   .timelineBox {
-    width: 550px;
+    width: 90%;
     text-align: left;
     align-items: center;
-    padding: 70px;
+    padding: 24px 5%;
     flex-direction: column;
     margin-left: 0%;
     z-index: 1;
+    position: absolute;
+  }
+  .planetImg {
+    position: absolute;
+    top: 100px;
+    height: 600px;
+    z-index: 1;
+  }
+  .marsmobile {
+    display: block;
+    position: relative;
+    height: 600px;
+    left: -200px;
+  }
+  .marsdesktop {
+    display: none;
   }
 }

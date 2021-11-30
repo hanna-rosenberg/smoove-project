@@ -48,6 +48,7 @@
     height: 30px;
     display: flex;
     align-items: center;
+    order: -1;
   }
   .footerTwo img {
     height: 25px;

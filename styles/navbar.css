@@ -5,10 +5,9 @@
   height: 90px;
   justify-content: space-between;
   display: flex;
-  margin-top: 7%;
+  margin-top: 2%;
   padding: 40px;
 }
-
 * {
   margin: 0px;
   padding: 0px;
@@ -53,6 +52,7 @@ li {
 
 /* styles on links when hovering */
 .navbar ul li a:hover {
+  color: #df8c40;
   font-size: 1.2rem;
 }
 
