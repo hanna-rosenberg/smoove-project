@@ -168,7 +168,7 @@ section#timeline p {
   }
 
   .timelineContainer {
-    height: 1400px;
+    height: 1500px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -304,13 +304,5 @@ section#timeline p {
   }
   .marsdesktop {
     display: none;
-  }
-
-  .timelineContainer {
-    height: 1200px;
-  }
-
-  section#timeline {
-    height: 1300px;
   }
 }

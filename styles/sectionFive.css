@@ -370,6 +370,11 @@ section#seven .hexagonButton {
     font-size: 30px;
   }
 
+  section#seven p {
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    padding-top: 10%;
+  }
   .textBox {
     width: 300px;
   }
@@ -392,7 +397,7 @@ section#seven .hexagonButton {
   }
 
   section#seven .hexagonButton {
-    margin-top: 265px;
+    margin-top: 315px;
     margin-left: 50px;
   }
 
@@ -418,7 +423,7 @@ section#seven .hexagonButton {
   }
 
   section#seven .textBoxRation .hexagonButton {
-    margin-top: 315px;
+    margin-top: 295px;
     margin-left: 42px;
     margin-bottom: 20px;
   }
@@ -431,7 +436,7 @@ section#seven .hexagonButton {
     position: absolute;
     z-index: 2;
     margin-right: 220px;
-    margin-top: 75px;
+    margin-top: 82px;
   }
 
   .bobblehead {
