@@ -11,6 +11,10 @@ section#eight video {
 
 @media screen and (max-width: 425px) {
   section#eight video {
-    height: 75%;
+    height: 100%;
+  }
+
+  section#eight {
+    height: 550px;
   }
 }

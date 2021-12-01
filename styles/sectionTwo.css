@@ -157,7 +157,7 @@ section#timeline p {
   transform: translateX(-50%);
   color: white;
   z-index: 1;
-  width: 120px;
+  /* width: 120px; */
 }
 
 /* media-queries for section-Two */
@@ -189,7 +189,7 @@ section#timeline p {
   }
   .timelineMobile {
     display: none;
-    z-index: 1000;
+    z-index: 2;
     top: 0;
     height: 500px;
   }
@@ -197,7 +197,7 @@ section#timeline p {
   .timelineMobile img {
     top: 0;
     height: 500px;
-    margin-left: 212.5px;
+    margin-left: 205px;
     margin-top: 165px;
     position: relative;
   }
@@ -210,17 +210,70 @@ section#timeline p {
     display: none;
   }
 
-  .firstYearInTimeline,
-  .firstEvent,
-  .secondYearInTimeline,
-  .secondEvent,
-  .thirdYearInTimeline,
-  .thirdEvent,
-  .fourthYearInTimeline,
-  .forthEvent,
-  .fifthYearInTimeline,
+  .firstYearInTimeline {
+    top: 165px;
+    right: 55%;
+    transform: translateX(0);
+    /* width: auto; */
+  }
+
+  .firstEvent {
+    top: 165px;
+    left: 55%;
+    transform: translateX(0);
+    transform: translateY(-40%);
+  }
+
   .fifthEvent {
-    display: none;
+    top: 645px;
+    left: 55%;
+    transform: translateX(0);
+  }
+
+  .fifthYearInTimeline {
+    top: 645px;
+    left: auto;
+    right: 55%;
+    transform: translateX(0);
+
+    width: auto;
+  }
+
+  .secondYearInTimeline {
+    top: 287.5px;
+    left: 55%;
+    transform: translateX(0);
+  }
+  .secondEvent {
+    top: 287.5px;
+    right: 55%;
+    left: auto;
+    transform: translateX(0);
+
+    width: 150px;
+  }
+  .thirdYearInTimeline {
+    top: 410px;
+    right: 55%;
+    left: auto;
+    transform: translateX(0);
+  }
+
+  .thirdEvent {
+    top: 410px;
+    left: 55%;
+    transform: translateX(0);
+  }
+  .fourthYearInTimeline {
+    top: 532.5px;
+    left: 55%;
+    transform: translateX(0);
+  }
+  .forthEvent {
+    top: 532.5px;
+    right: 55%;
+    left: auto;
+    transform: translate(0);
   }
 
   .timelineMobile {
@@ -251,5 +304,13 @@ section#timeline p {
   }
   .marsdesktop {
     display: none;
+  }
+
+  .timelineContainer {
+    height: 1200px;
+  }
+
+  section#timeline {
+    height: 1300px;
   }
 }

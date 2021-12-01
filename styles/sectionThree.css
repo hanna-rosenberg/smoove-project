@@ -132,10 +132,10 @@ section#overlay {
   .infomobile {
     display: block;
     background: rgba(20, 20, 20, 0.9);
-    padding: 16px 16px 16px 32px;
     color: #4fc4e9;
     text-align: center;
     border-bottom: #df8c40 2px solid;
+    padding: 32px 16px 16px 32px;
   }
   .infomobile ul {
     display: inline-block;
@@ -148,6 +148,6 @@ section#overlay {
     margin: 16px 0;
   }
   .infomobile h2 {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 }

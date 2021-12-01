@@ -31,7 +31,7 @@ section#four h1 {
 }
 
 .childFour {
-  margin-top: 70vh;
+  margin-top: 40vh;
   width: 100%;
 }
 .parentFour input[type="text"] {
@@ -66,4 +66,18 @@ input[type="submit"]:hover {
   cursor: pointer;
   color: white;
   border: hidden;
+}
+
+@media screen and (max-width: 425px) {
+  .childFour {
+    margin-top: 50vh;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  .parentFour input[type="text"] {
+    width: 350px;
+  }
 }
