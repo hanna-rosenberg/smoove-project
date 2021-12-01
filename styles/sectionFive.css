@@ -14,7 +14,7 @@
 .slider .txt {
   position: absolute;
   color: #4fc4e9;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 35px;
   top: 5%;
   left: 18%;
@@ -41,7 +41,7 @@
   justify-content: space-between;
 }
 .textBox {
-  width: 300px;
+  width: 400px;
   text-align: left;
   margin-top: 10%;
 }
@@ -67,7 +67,7 @@
 .slider .txtRation {
   position: absolute;
   color: #4fc4e9;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   /* line-height: 35px; */
   top: 10%;
   /* left: 50%; */
@@ -333,19 +333,23 @@ section#seven .hexagonButton {
   display: block;
 }
 
+.watchLine {
+  display: none;
+}
+
+.rationLine {
+  display: none;
+}
+.rationLine img {
+  display: none;
+}
 @media screen and (max-width: 425px) {
-  .txt h1 {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
   .sign {
     margin-right: 20px;
   }
+
   .sign a {
     font-size: 12px;
-  }
-  .txt {
-    width: 400px;
   }
 
   .merchMobile {
@@ -357,9 +361,49 @@ section#seven .hexagonButton {
     display: none;
   }
 
-  .textBoxRation {
+  /* media for merch-watch */
+  .txt {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .textBox {
     width: 300px;
-    text-align: left;
+  }
+
+  .textBox img {
+    display: none;
+  }
+
+  .textBox h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .watchLine {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    margin-left: -20px;
+    margin-top: 100px;
+  }
+
+  section#seven .hexagonButton {
+    margin-top: 265px;
+    margin-left: 50px;
+  }
+
+  /* media om merch-ration */
+
+  .txtRation {
+    justify-content: center;
+    margin-left: 20%;
+  }
+
+  .txtRation h1 {
     margin: 0;
   }
 
@@ -369,9 +413,28 @@ section#seven .hexagonButton {
     margin: 0;
   }
 
-  .textBoxRation {
-    width: 300px;
-    text-align: left;
-    margin: 0;
+  .textBoxRation img {
+    display: none;
+  }
+
+  section#seven .textBoxRation .hexagonButton {
+    margin-top: 315px;
+    margin-left: 42px;
+    margin-bottom: 20px;
+  }
+
+  .buttonContainer {
+    margin-left: 0;
+  }
+  .rationLine {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    margin-right: 220px;
+    margin-top: 75px;
+  }
+
+  .bobblehead {
+    margin-top: -30px;
   }
 }

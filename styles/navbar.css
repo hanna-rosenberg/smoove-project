@@ -68,13 +68,34 @@ li {
   margin-top: 4px;
 }
 
+.menu {
+  display: none;
+}
 /* media-queries for navbar*/
 
 @media screen and (max-width: 425px) {
+  img .menu {
+    width: 30px;
+    height: 30px;
+  }
   .navbar {
-    background: #202020;
-    height: 120px;
+    justify-content: space-between;
+    height: 100px;
     margin-top: 0;
+    background: transparent;
+    padding: 25px 20px 0px 20px;
+    position: absolute;
+  }
+
+  .logotype {
+    width: 425px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logotype img {
+    height: 70px;
+    width: auto;
   }
 
   .navbar ul {
@@ -82,6 +103,11 @@ li {
   }
 
   .navbar img {
-    transform: translate(120px, -15px);
+    margin-top: 0;
+  }
+
+  .menu {
+    display: block;
+    width: 40px;
   }
 }
