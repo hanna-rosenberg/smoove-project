@@ -42,10 +42,10 @@ section#timeline p {
   height: 80vh;
   z-index: 1;
 }
-.marsdesktop {
+.marsDesktop {
   display: block;
 }
-.marsmobile {
+.marsMobile {
   display: none;
 }
 .timelineBox img {
@@ -296,13 +296,13 @@ section#timeline p {
     height: 600px;
     z-index: 1;
   }
-  .marsmobile {
+  .marsMobile {
     display: block;
     position: relative;
     height: 600px;
     left: -200px;
   }
-  .marsdesktop {
+  .marsDesktop {
     display: none;
   }
 }

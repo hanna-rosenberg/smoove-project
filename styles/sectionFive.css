@@ -40,7 +40,7 @@
   display: flex;
   justify-content: space-between;
 }
-.textBox {
+.textBoxMerch {
   width: 400px;
   text-align: left;
   margin-top: 10%;
@@ -52,15 +52,11 @@
   margin-left: 70%;
 }
 
-.textBox {
-  margin-top: 7%;
-}
-
-.textBox p {
+.textBoxMerch p {
   padding-top: 5%;
 }
 
-.textBox h1 {
+.textBoxMerch h1 {
   padding-bottom: 5%;
 }
 
@@ -312,7 +308,7 @@
   height: 50px;
 }
 
-section#seven .hexagonButton {
+section#smooveMerch .hexagonButton {
   margin-top: 100px;
 }
 
@@ -370,20 +366,20 @@ section#seven .hexagonButton {
     font-size: 30px;
   }
 
-  section#seven p {
+  section#smooveMerch p {
     letter-spacing: 0.5px;
     line-height: 30px;
     padding-top: 10%;
   }
-  .textBox {
+  .textBoxMerch {
     width: 300px;
   }
 
-  .textBox img {
+  .textBoxMerch img {
     display: none;
   }
 
-  .textBox h1 {
+  .textBoxMerch h1 {
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -396,8 +392,8 @@ section#seven .hexagonButton {
     margin-top: 100px;
   }
 
-  section#seven .hexagonButton {
-    margin-top: 315px;
+  section#smooveMerch .hexagonButton {
+    margin-top: 305px;
     margin-left: 50px;
   }
 
@@ -422,7 +418,7 @@ section#seven .hexagonButton {
     display: none;
   }
 
-  section#seven .textBoxRation .hexagonButton {
+  section#smooveMerch .textBoxRation .hexagonButton {
     margin-top: 295px;
     margin-left: 42px;
     margin-bottom: 20px;

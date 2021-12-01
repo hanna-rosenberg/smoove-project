@@ -1,20 +1,22 @@
-section#eight {
+/* styles on SIXT section, footer */
+
+section#footer {
   justify-content: flex-end;
   position: relative;
 }
 
-section#eight video {
+section#footer video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 @media screen and (max-width: 425px) {
-  section#eight video {
+  section#footer video {
     height: 100%;
   }
 
-  section#eight {
+  section#footer {
     height: 550px;
   }
 }
