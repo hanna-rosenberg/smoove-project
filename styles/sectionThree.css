@@ -7,10 +7,6 @@ section#overlay {
     center/cover;
 }
 
-.infoMobile {
-  display: none;
-}
-
 .overlayContainer {
   display: column;
   justify-content: flex-start;
@@ -19,6 +15,7 @@ section#overlay {
   position: relative;
 }
 
+/* styles on divs with design line and text */
 .solarPanel {
   top: 37%;
   left: 67%;
@@ -113,6 +110,10 @@ section#overlay {
   width: 150px;
 }
 
+.infoMobile {
+  display: none;
+}
+
 @media screen and (max-width: 425px) {
   .overlayContainer {
     display: none;
@@ -124,6 +125,7 @@ section#overlay {
     background-position: top;
     height: 775px;
   }
+
   .infoMobile {
     display: block;
     background: rgba(20, 20, 20, 0.9);
@@ -132,16 +134,19 @@ section#overlay {
     border-bottom: #df8c40 2px solid;
     padding: 32px 16px 16px 32px;
   }
+
   .infoMobile ul {
     display: inline-block;
     text-align: left;
     list-style-image: url("../images/listdot.svg");
     list-style-position: outside;
   }
+
   .infoMobile ul li {
     display: list-item;
     margin: 16px 0;
   }
+
   .infoMobile h2 {
     margin-bottom: 8px;
   }
