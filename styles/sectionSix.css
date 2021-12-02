@@ -1,4 +1,4 @@
-/* styles on SIXT section, footer */
+/* styles on SIXTH section, footer */
 
 section#footer {
   justify-content: flex-end;
@@ -12,11 +12,11 @@ section#footer video {
 }
 
 @media screen and (max-width: 425px) {
-  section#footer video {
-    height: 100%;
-  }
-
   section#footer {
     height: 550px;
+  }
+
+  section#footer video {
+    height: 100%;
   }
 }

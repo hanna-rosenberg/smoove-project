@@ -1,3 +1,5 @@
+/* styles on FOOTER */
+
 .footerContainer {
   display: flex;
   justify-content: space-between;
@@ -19,6 +21,7 @@
   width: 200px;
   height: 50px;
 }
+
 .textLogo img {
   width: 200px;
   height: 50px;
@@ -40,9 +43,14 @@
     align-items: center;
     gap: 14px;
   }
+
   footer img {
     width: 100vw;
     height: 30px;
+  }
+
+  .socialMedia {
+    margin-left: 0;
   }
 
   .textLogo {
@@ -51,19 +59,16 @@
     align-items: center;
     order: -1;
   }
+
   .textLogo img {
     height: 25px;
   }
 
-  .contact p {
-    font-size: 16px;
-  }
-
-  .socialMedia {
-    margin-left: 0;
-  }
-
   .contact {
     margin: 0;
+  }
+
+  .contact p {
+    font-size: 16px;
   }
 }
