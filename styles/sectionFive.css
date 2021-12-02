@@ -200,7 +200,7 @@ section#smooveMerch .hexagonButton {
 }
 
 .textBoxRation {
-  width: 37%;
+  width: 33%;
   text-align: right;
   margin-left: 70%;
   text-align: right;
@@ -326,9 +326,8 @@ section#smooveMerch .hexagonButton {
   }
 
   section#smooveMerch .textBoxRation .hexagonButton {
-    margin-top: 295px;
+    margin-top: 235px;
     margin-left: 42px;
-    margin-bottom: 20px;
   }
 
   .rationLine {
@@ -336,7 +335,7 @@ section#smooveMerch .hexagonButton {
     position: absolute;
     z-index: 2;
     margin-right: 220px;
-    margin-top: 82px;
+    margin-top: 92px;
   }
 
   .bobblehead {
