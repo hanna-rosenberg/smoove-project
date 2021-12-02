@@ -13,14 +13,15 @@ section#frontPage video {
   object-fit: cover;
 }
 
+section#frontPage h1 {
+  color: #df8c40;
+}
+
 section#frontPage p {
   margin-top: 10px;
   color: #df8c40;
 }
 
-section#frontPage h1 {
-  color: #df8c40;
-}
 .frontPageContainer {
   height: 100%;
   width: 100%;
@@ -43,21 +44,30 @@ section#frontPage .frontBox img {
   position: absolute;
 }
 
-section#frontPage button {
-  margin-top: 24px;
+section#frontPage .hexagonButton {
+  margin-top: 25%;
 }
 
-section#frontPage button p {
-  margin-top: 0px;
-  font-size: 14px;
-}
-
-/* media-queries for section-One */
+/* media-queries for sectionOne */
 
 @media screen and (max-width: 425px) {
   section#frontPage {
     position: relative;
     height: 700px;
+  }
+
+  .frontPageContainer {
+    height: 700px;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    display: flex;
+  }
+
+  .frontBox {
+    width: 420px;
+    margin: 0;
+    top: 30%;
   }
 
   section#frontPage video {
@@ -73,17 +83,8 @@ section#frontPage button p {
   section#frontPage .frontBox img {
     display: none;
   }
-  .frontPageContainer {
-    height: 700px;
-    width: 100%;
-    text-align: left;
-    align-items: center;
-    display: flex;
-  }
 
-  .frontBox {
-    width: 420px;
-    margin: 0;
-    top: 30%;
+  section#frontPage .hexagonButton {
+    margin-top: 10%;
   }
 }
