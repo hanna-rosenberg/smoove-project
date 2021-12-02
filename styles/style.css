@@ -4,27 +4,6 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-::-webkit-scrollbar-thumb {
-  display: none;
-
-  -webkit-border-radius: 7px;
-  display: none;
-}
-::-webkit-scrollbar-button {
-  display: none;
-}
-::-webkit-scrollbar-corner {
-  display: none;
-}
-
-::selection {
-  background-color: #4fc4e9;
-  color: white;
-}
-
 /* body-style */
 body {
   font-family: Aileron;
@@ -80,6 +59,27 @@ section {
   width: auto !important;
   height: 100vh;
   scroll-snap-align: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  display: none;
+
+  -webkit-border-radius: 7px;
+  display: none;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+::selection {
+  background-color: #4fc4e9;
+  color: white;
 }
 
 /* media-queries for navbar*/
