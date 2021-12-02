@@ -62,7 +62,7 @@ input[type="submit"]:hover {
   }
 
   .emailBox {
-    margin-top: 50vh;
+    margin-top: 10%;
   }
 
   .emailContainer input[type="text"] {

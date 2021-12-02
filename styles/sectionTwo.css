@@ -159,6 +159,27 @@ section#timeline p {
   z-index: 1;
 }
 
+.population {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  left: 24%;
+  position: absolute;
+  z-index: 2;
+  margin-top: 45%;
+  align-items: center;
+}
+
+.populationSvg img {
+  width: auto;
+}
+
+section#timeline .population p {
+  font-size: 12px;
+  margin: 0;
+  color: white;
+}
+
 /* media-queries for sectionTwo, timeline */
 
 @media screen and (max-width: 425px) {
@@ -188,7 +209,7 @@ section#timeline p {
     margin-left: 5%;
     z-index: 1;
     position: absolute;
-    margin-top: 700px;
+    margin-top: 750px;
   }
 
   .timelineBox img {
@@ -298,5 +319,10 @@ section#timeline p {
     right: 55%;
     transform: translateX(0);
     width: auto;
+  }
+
+  .population {
+    margin-top: 680px;
+    margin-left: 180px;
   }
 }
